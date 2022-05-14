@@ -1,0 +1,240 @@
+/* CSS HEX
+--raisin-black: rgba(23, 26, 33, 1);
+--orange-web: rgba(252, 163, 17, 1);
+--shadow-blue: rgba(122, 147, 172, 1);
+--beige: rgba(238, 245, 219, 1);
+--orange-red-crayola: rgba(254, 95, 85, 1);
+
+rich-black-fogra-39: rgba(12, 18, 12, 1);
+$silver-metallic: rgba(167, 162, 169, 1);
+$viridian-green: rgba(12, 164, 165, 1);
+$tea-green: rgba(197, 237, 172, 1);
+$cinereous: rgba(145, 124, 120, 1);
+
+*/
+
+/* Global
+--------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* box-fix kódok, content-box helyet border-box-ként érzékeli a méreteket, és a megadott méret egyértelmű, nem kell összeadogatni a content+padding+border-t */
+
+body {
+  color: #171a21ff;
+  background: #eef5dbff;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+}
+
+/* body margin:0 és padding:0 és a box-fix mindig használandó alap CSS dolgok */
+
+h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  margin: 0;
+}
+
+.wrap {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 85%;
+  /* ha a max width-nél kisebb a hely, a width-et alkalmazza így */
+  margin: 0 auto;
+}
+
+/* Header
+--------------------------------------------------------*/
+
+header {
+  background: rgba(87, 104, 121, 1);
+  margin-bottom: 0px;
+  text-align: center;
+  background-image: url(./Img/Untitled-1.png);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+}
+
+header div {
+  padding: 50px 0px 30px 0px;
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+header a {
+  background-color: rgba(105, 53, 32, 0.6);
+  display: inline-block;
+  border: 2px solid rgba(22, 76, 129, 0.3);
+  border-radius: 6px;
+  margin-top: 30px;
+  width: fit-content;
+  padding: 5px;
+  color: azure;
+}
+
+header a:hover {
+  background: rgb(87, 104, 121);
+  border: 2px solid rgba(0, 0, 0, 0.589);
+  color: rgba(238, 245, 219, 1);
+}
+
+/* Personal
+--------------------------------------------------------*/
+
+.personal {
+  background: rgba(122, 147, 172, 0.9);
+  margin-bottom: 0px;
+}
+
+.personal a {
+  background: rgba(254, 95, 85, 0.4);
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 2px solid rgba(22, 76, 129, 0.3);
+}
+
+.personal a:hover {
+  background: rgb(87, 104, 121);
+  border: 2px solid rgba(0, 0, 0, 0.589);
+  color: rgba(238, 245, 219, 1);
+}
+
+/* Education
+--------------------------------------------------------*/
+
+.education {
+  background: rgba(254, 95, 85, 0.9);
+  margin-bottom: 0px;
+}
+
+/* Experience
+---------------------------------------------------------*/
+
+.experience {
+  background-image: url(./Img/work.jpg);
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.experience section {
+  overflow: auto;
+  border-bottom: 1px dashed rgb(23, 26, 33);
+  padding: 25px 0;
+  margin-top: 12px;
+  overflow: visible;
+}
+
+.wrap section:last-child {
+  border-bottom: none;
+}
+
+/* .grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+} */
+
+.experience #image {
+  filter: drop-shadow(8px 8px 10px black);
+  border-radius: 10px;
+}
+
+/* #image:hover{
+    transform: rotate(90);
+    filter: drop-shadow(-8px -8px 10px black);
+    border-radius: 10px;
+} */
+
+#image:hover {
+  transition: all 0.8s ease-in-out;
+  transform: rotate(360deg) scale(1.5);
+  filter: drop-shadow(8px 8px 20px black);
+}
+
+/* Licenses & certifications
+---------------------------------------------------------*/
+
+.licenses {
+  background: rgba(254, 95, 85, 0.9);
+  margin-bottom: 0px;
+}
+
+/* Skills
+----------------------------------------------------------*/
+.skills {
+  background: rgba(122, 147, 172, 0.9);
+  margin-bottom: 0px;
+}
+
+/* Footer
+----------------------------------------------------------*/
+
+footer {
+  background: rgba(254, 95, 85, 0.9);
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  padding: 20px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Responsive
+----------------------------------------------------------*/
+
+@media screen and (min-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* For JS
+----------------------------------------------------------*/
+
+.hide {
+  height: 0;
+  overflow: hidden;
+  border: rgba(105, 53, 32, 0.8) 5px solid;
+}
+
+/* height és overflow kombóval lehet elrejteni egy kontentet */
