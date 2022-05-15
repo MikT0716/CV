@@ -116,8 +116,16 @@ header a:hover {
 --------------------------------------------------------*/
 
 .education {
-  background: rgba(254, 95, 85, 0.9);
+  background: rgba(229, 146, 69, 0.9);
   margin-bottom: 0px;
+  height: 35em;
+}
+
+.uni {
+  background-image: url(./Img/uniszeged.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 35em;
 }
 
 /* Experience
