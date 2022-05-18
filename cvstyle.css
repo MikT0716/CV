@@ -18,6 +18,7 @@ $cinereous: rgba(145, 124, 120, 1);
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -234,6 +235,35 @@ footer li {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+}
+
+.myBtn {
+  display: none;
+  bottom: 3em;
+  right: 3em;
+  z-index: 99;
+  min-width: 80px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: fixed;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #ef233c;
+  box-shadow: 0 5px #d90429;
+}
+.myBtn:hover {
+  box-shadow: 0 5px 5px #d90429;
+  transform: scale(1.2);
+}
+.myBtn:active {
+  box-shadow: 0 3px #d90429;
+  transform: scale(1);
 }
 
 #myBtn:hover {

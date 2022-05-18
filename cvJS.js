@@ -82,9 +82,9 @@ toggleButton.addEventListener("click", togglePersonal, false);
 
 /* To the top button
 -----------------------------------------------------------------------------------*/
-mybutton = document.querySelector("#myBtn");
+mybutton = document.querySelector(".myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 100px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -92,7 +92,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (
     /* document.body.scrollTop > 20 || */ document.documentElement.scrollTop >
-    20
+    200
   ) {
     mybutton.style.display = "block";
   } else {
