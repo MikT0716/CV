@@ -250,7 +250,6 @@ footer li {
   cursor: pointer;
   transition: all 0.3s ease;
   position: fixed;
-  display: inline-block;
   outline: none;
   border-radius: 5px;
   border: none;
