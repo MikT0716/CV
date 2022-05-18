@@ -137,6 +137,7 @@ header a:hover {
 .uni {
   background-image: url(./Img/uniszeged.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 35em;
 }
