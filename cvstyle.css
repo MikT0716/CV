@@ -90,6 +90,19 @@ header a:hover {
   color: rgba(238, 245, 219, 1);
 }
 
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 /* Personal
 --------------------------------------------------------*/
 
@@ -116,7 +129,7 @@ header a:hover {
 --------------------------------------------------------*/
 
 .education {
-  background: rgba(229, 146, 69, 0.9);
+  background: rgba(228, 145, 68, 0.9);
   margin-bottom: 0px;
   height: 35em;
 }
